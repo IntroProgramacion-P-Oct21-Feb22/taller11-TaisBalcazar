@@ -29,8 +29,13 @@ public class Ejemplo2 {
 
     public static boolean buscarDato(int[] datos, int datoBuscar) {
         boolean valor = false;
-        for (int i = 0; i < datos.length; i++) {
-            if (datos[i] == datoBuscar) {
+        for (int i = 0; i < datos.length; i++) { // 0<6 v //1<6 v // 2<6 v // 3<6 v // 4<6 v // 5<6 v // 6<6 v
+            if (datos[i] == datoBuscar) { //datos[0] == 140 // 10 == 140 // falso
+                                          //datos[1] == 140 // 20 == 140 // falso
+                                          //datos[2] == 140 // 30 == 140 // falso
+                                          //datos[3] == 140 // 40 == 140 // falso
+                                          //datos[4] == 140 // 50 == 140 // falso
+                                          //datos[5] == 140 // 100 == 140 // falso
                 valor = true;
             }
         }
